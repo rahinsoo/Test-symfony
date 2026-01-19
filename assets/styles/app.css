@@ -1,3 +1,49 @@
-body {
-    background-color: skyblue;
+main{
+    min-height: 75vh;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.size1{
+    width: 25%;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+hr{
+    width: 50%;
+}
+
+.flex{
+    display: flex;
+}
+
+.gap{
+    gap: 3%;
+}
+
+.col{
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }

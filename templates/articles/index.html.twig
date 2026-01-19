@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}articles
+{% endblock %}
+
+{% block body %}
+
+	{{ form_errors(form)}}
+	{{ form_start(form) }}
+	<div class="flex col">
+		<div class="flex col">
+			{{ form_label(form.title) }}
+			{{ form_widget(form.title) }}
+		</div>
+		<div class="flex col">
+			{{ form_label(form.description) }}
+			{{ form_widget(form.description) }}
+		</div>
+	</div>
+	<button type="submit">Envoyer</button>
+	{{ form_end(form) }}
+{% endblock %}

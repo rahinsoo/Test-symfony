@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}coucou
+{% endblock %}
+
+{% block body %}
+
+	<h2>Mon super site</h2>
+	<hr/>
+	<section class="flex gap">
+		{% for article in articles %}
+			<article style="border: 1px solid black; padding:2%;">
+				<h2>{{ article.title }}</h2>
+				<p>{{ article.description }}</p>
+				<small>{{ article.author.pseudo }}</small>
+			</article>
+		{% endfor %}
+	</section>
+	<hr/>
+	<section class="flex col">
+		<article>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</article>
+		<article>
+			<table border="1">
+				<thead>
+					<hd>quantité</hd>
+					<hd>Prix</hd>
+					<hd>Total</hd>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>100€</td>
+						<td>100€</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>5€</td>
+						<td>50€</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+{% endblock %}
